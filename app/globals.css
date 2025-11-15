@@ -43,7 +43,7 @@ a {
 
 /* For Contact Section Start */
 #contact{
-  background: url(/images/map.jpg);
+  background: url(/public/images/persona5.jpg);
   background-size: cover;       
   background-repeat: no-repeat;  
   background-position: center; 
@@ -60,3 +60,18 @@ a {
   text-decoration: underline;
 }
 /* For Footer end */
+
+.hero {
+  background: url('/images/hero.jpg');
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+}
+body {
+  background: #f6f6f6;
+  color: #222;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
