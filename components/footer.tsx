@@ -1,13 +1,7 @@
-"use client";
-
-import { Container } from "react-bootstrap";
-
 export default function Footer() {
-  return (
-    <footer className="py-3 bg-dark text-center text-light">
-      <Container>
-        <small>© {new Date().getFullYear()} SEGA Corporation. All Rights Reserved.</small>
-      </Container>
-    </footer>
-  );
+return (
+<footer className="text-center py-3 bg-dark text-light">
+<p>© 2025 SEGA Corporation</p>
+</footer>
+);
 }

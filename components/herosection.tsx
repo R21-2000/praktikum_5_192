@@ -1,14 +1,19 @@
-"use client";
+import Image from "next/image";
 
-import { Container } from "react-bootstrap";
 
 export default function HeroSection() {
-  return (
-    <section className="hero d-flex align-items-center">
-      <Container className="text-center text-light">
-        <h1 className="fw-bold display-4">Welcome to SEGA</h1>
-        <p className="lead">Creating the Future of Entertainment Since 1960</p>
-      </Container>
-    </section>
-  );
+return (
+<div className="text-center" style={{ position: "relative" }}>
+<Image
+src="/images/sega-bg.jpg"
+alt="SEGA Hero"
+width={1600}
+height={600}
+style={{ width: "100%", height: "auto" }}
+/>
+<h1 className="position-absolute top-50 start-50 translate-middle fw-bold text-light display-3">
+Welcome to SEGA
+</h1>
+</div>
+);
 }
