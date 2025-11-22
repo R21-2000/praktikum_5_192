@@ -84,12 +84,30 @@ font-weight: 700;
 margin-bottom: 20px;
 text-transform: uppercase;
 }
-
-.sega-card img {
-border-radius: 10px;
-transition: transform 0.3s;
-}
-
 .sega-card img:hover {
 transform: scale(1.05);
+}
+.sega-card {
+  height: 100%; 
+  border: none; /* Opsional: Biar lebih bersih */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Opsional: Biar ada bayangan dikit */
+}
+.sega-card img {
+  width: 100%;         /* Lebar mentok ke card */
+  height: 220px;       /* TINGGI FIXED: Ini kuncinya biar semua sama rata */
+  object-fit: cover;   /* MAGIC CODE: Memotong gambar otomatis biar gak gepeng */
+  object-position: center; /* Fokus ke tengah gambar */
+  border-top-left-radius: var(--bs-card-inner-border-radius); /* Ikuti round card */
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+}
+#studios .sega-card img {
+  object-fit: contain; /* Gunakan 'contain' agar LOGO tampil utuh (tidak ke-crop) */
+  padding: 20px;       /* Beri jarak biar logo tidak nempel pinggir */
+  background-color: #ffffff; /* Beri background putih karena biasanya logo transparan/putih */
+  height: 180px;       /* Sedikit lebih pendek untuk logo biar proporsional */
+}
+.studio-card img {
+    object-fit: contain;   /* Logo lebih bagus pakai contain biar full terlihat */
+    padding: 20px;         /* Beri jarak biar logo gak mentok */
+    background: #fff;      /* Background putih untuk logo */
 }
