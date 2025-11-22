@@ -1,23 +1,32 @@
 "use client";
 
-import NavbarComponent from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
+import NewsSection from "../components/NewsSection";
 import AboutSection from "../components/AboutSection";
 import GamesSection from "../components/GamesSection";
 import StudioSection from "../components/StudioSection";
 import ContactSection from "../components/ContactSection";
-import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <>
-      <NavbarComponent />
+    <main>
       <HeroSection />
-      <AboutSection />
-      <StudioSection />
-      <GamesSection />
+
+      <NewsSection />
+
+      <div style={{ backgroundColor: "#0d0d0d", color: "white" }}>
+        <GamesSection />
+      </div>
+
+      <div className="bg-primary text-white">
+         <AboutSection />
+      </div>
+
+      <div className="bg-light">
+        <StudioSection />
+      </div>
+
       <ContactSection />
-      <Footer />
-    </>
+    </main>
   );
 }
