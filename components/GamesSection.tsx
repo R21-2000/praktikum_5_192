@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function GamesSection() {
 const games = [
-{ name: "Sonic the Hedgehog", img: "/images/games/sonic.png", link: "/games/sonic" },
+{ name: "Sonic the Hedgehog", img: "/images/games/sonic.jpg", link: "/games/sonic" },
 { name: "Yakuza / Like a Dragon", img: "/images/games/yakuza.jpg", link: "/games/yakuza" },
 { name: "Persona 5", img: "/images/games/persona5.jpg", link: "/games/persona5" },
-{ name: "Total War Series", img: "/images/games/totalwar.jpeg", link: "/games/totalwar" },
+{ name: "Total War Series", img: "/images/games/totalwar.jpg", link: "/games/totalwar" },
 ];
 
-
+    
 return (
 <section id="games" className="py-5 bg-dark">
 <Container>

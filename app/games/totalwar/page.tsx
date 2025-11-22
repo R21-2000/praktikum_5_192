@@ -6,7 +6,7 @@ export default function TotalWarPage() {
     <Container className="py-5">
       <h1 className="section-title">Total War Series</h1>
       <Image
-        src="/images/games/totalwar.jpeg"
+        src="/images/games/totalwar.jpg"
         width={800}
         height={400}
         alt="Total War Series"
